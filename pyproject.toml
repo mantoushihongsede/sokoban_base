@@ -1,0 +1,17 @@
+[project]
+name = "sokoban-agent-prototype"
+version = "0.1.0"
+description = "A cleaned GitHub-ready snapshot of a Sokoban-based LLM/agent evaluation prototype."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.0.0",
+    "anthropic>=0.34.0",
+    "google-genai>=0.7.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+    "tqdm>=4.66.0",
+]
+
+[tool.setuptools]
+packages = ["core", "analyzers", "evaluation", "llm_protocol", "tasks"]
