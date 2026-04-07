@@ -1,0 +1,189 @@
+[
+  {
+    "level_id": "Simple_001",
+    "image_path": "data/sokoban_classified/rendered_images/Simple_001.png",
+    "height": 4,
+    "width": 4,
+    "walls": [
+      [0, 0],
+      [0, 1],
+      [0, 2],
+      [0, 3],
+      [1, 0],
+      [1, 3],
+      [2, 0],
+      [2, 3],
+      [3, 0],
+      [3, 1],
+      [3, 2],
+      [3, 3]
+    ],
+    "targets": [
+      [1, 2]
+    ],
+    "agent_pos": [1, 1],
+    "boxes": [
+      [2, 1]
+    ],
+    "ground_truth_deadlock": {
+      "is_deadlock": true,
+      "definite_reasons": [
+        [[2, 1] , ["static_dead_square", "blocked_2x2_structure"]]
+      ]
+    },
+    "ground_truth_static_dead_squares": {
+      "static_dead_squares": [
+        [1, 1],
+        [2, 1],
+        [2, 2]
+      ],
+      "count": 3
+    },
+    "ground_truth_box_status": [
+      {
+        "box": [2, 1],
+        "on_target": false,
+        "on_static_dead_square": true,
+        "in_blocked_2x2": false,
+        "currently_immovable": true,
+        "legal_pushes": []
+      }
+    ]
+  },
+  {
+    "level_id": "Simple_002",
+    "image_path": "data/sokoban_classified/rendered_images/Simple_002.png",
+    "height": 5,
+    "width": 4,
+    "walls": [
+      [0, 0],
+      [0, 1],
+      [0, 2],
+      [0, 3],
+      [1, 0],
+      [1, 3],
+      [2, 0],
+      [2, 3],
+      [3, 0],
+      [3, 3],
+      [4, 0],
+      [4, 1],
+      [4, 2],
+      [4, 3]
+    ],
+    "targets": [
+      [3, 1]
+    ],
+    "agent_pos": [1, 2],
+    "boxes": [
+      [2, 1]
+    ],
+    "ground_truth_deadlock": {
+      "is_deadlock": false,
+      "definite_reasons": []
+    },
+    "ground_truth_static_dead_squares": {
+      "static_dead_squares": [
+        [1, 1],
+        [1, 2],
+        [2, 2],
+        [3, 2]
+      ],
+      "count": 4
+    },
+    "ground_truth_box_status": [
+      {
+        "box": [2, 1],
+        "on_target": false,
+        "on_static_dead_square": false,
+        "in_blocked_2x2": false,
+        "currently_immovable": false,
+        "legal_pushes": ["up" ,"down"]
+      }
+    ]
+  },
+  {
+    "level_id": "Simple_004",
+    "image_path": "data/sokoban_classified/rendered_images/参考Simple_004.png/",
+    "height": 5,
+    "width": 4,
+    "walls": [
+      [0, 0],
+      [0, 1],
+      [0, 2],
+      [0, 3],
+      [1, 0],
+      [1, 3],
+      [2, 0],
+      [2, 3],
+      [3, 0],
+      [3, 3],
+      [4, 0],
+      [4, 1],
+      [4, 2],
+      [4, 3]
+    ],
+    "targets": [
+      [1, 2]
+    ],
+    "agent_pos": [1, 1],
+    "boxes": [
+      [2, 1],
+      [2, 2],
+      [3, 1],
+      [3, 2]
+    ],
+    "ground_truth_deadlock": {
+      "is_deadlock": true,
+      "definite_reasons": [
+        [[2, 1] , ["blocked_2x2_structure"]],
+        [[2, 2] , ["static_dead_square", "blocked_2x2_structure"]],
+        [[3, 1] , ["static_dead_square", "blocked_2x2_structure"]],
+        [[3, 2] , ["static_dead_square", "blocked_2x2_structure"]]
+      ]
+    },
+    "ground_truth_static_dead_squares": {
+      "static_dead_squares": [
+        [1, 1],
+        [2, 1],
+        [3, 1],
+        [3, 2]
+      ],
+      "count": 4
+    },
+    "ground_truth_box_status": [
+      {
+        "box": [2, 1],
+        "on_target": false,
+        "on_static_dead_square": true,
+        "in_blocked_2x2": true,
+        "currently_immovable": true,
+        "legal_pushes": []
+      },
+      {
+        "box": [2, 2],
+        "on_target": false,
+        "on_static_dead_square": false,
+        "in_blocked_2x2": true,
+        "currently_immovable": true,
+        "legal_pushes": []
+      },
+      {
+        "box": [3, 1],
+        "on_target": false,
+        "on_static_dead_square": true,
+        "in_blocked_2x2": true,
+        "currently_immovable": true,
+        "legal_pushes": []
+      },
+      {
+        "box": [3, 2],
+        "on_target": false,
+        "on_static_dead_square": true,
+        "in_blocked_2x2": true,
+        "currently_immovable": true,
+        "legal_pushes": []
+      }
+    ]
+  }
+]
