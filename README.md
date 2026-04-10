@@ -135,4 +135,3 @@ python scripts/main.py
 - client 抽象还没有完全统一，离线评测和 function-calling 仍然是两条链路
 - 规划类任务里有一部分 ground truth 来自启发式规则，而不是严格求解器
 - function-calling demo 仅作为展示 Agent 方向。并不是稳定、通用的多轮智能体系统
-- 项目本身是我曾经的课题的部分。这里节选的部分是为了展示我可以把“环境建模 + 工具调用 + 自动评测”组合成一个可复现的 Agent 原型。
